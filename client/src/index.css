@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-bg-welcome {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+  
+  /*background: rgb(73,9,121);
+background: linear-gradient(329deg, rgba(73,9,121,1) 12%, rgba(37,29,82,1) 55%, rgba(39,34,41,1) 73%); */
+}
+
+.gradient-bg-services {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-contacts {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 50% 25%, hsla(225,39%,25%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+  background-color: #0f0e13;
+  background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #0f0e13;
+  background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
+    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.eth-card {
+  background-color:#a099ff;
+  background-image: 
+    radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
+    radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
+    radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
+    radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
+    radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
+    radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
+    radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+}
+
+.text-gradient {
+  background-color: #fff;
+  background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(62, 60, 60) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.incoming-transaction {
+  outline: 3px solid rgb(44, 166, 190);
+}
+
+.outgoing-transaction {
+  outline: 3px solid rgb(99, 15, 145);
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #282c36;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 36%; /* Could be more or less, depending on screen size */
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  transform: translate(0px, 0px);
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.close {
+  color: rgb(235, 228, 228);
+  transform: translate(0px, -10px);
+  float: right;
+}
+
+.close:hover {
+  color: rgb(207, 46, 40);
+  cursor: pointer;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+table.purpleHorizon {
+  border: 4px solid #792396;
+  background-color: #181918;
+  width: 350px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.purpleHorizon td{
+  border: 1px solid #555555;
+  padding: 10px 40px;
+}
+table.purpleHorizon th {
+  border: 1px solid #555555;
+  padding: 10px 4px;
+}
+
+table.purpleHorizon tbody td {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+table.purpleHorizon tr:nth-child(even) {
+  background: #4c125f;
+}
+table.purpleHorizon thead {
+  background: #792396;
+  border-bottom: 4px solid #792396;
+}
+table.purpleHorizon thead th {
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 0px solid #792396;
+}
+table.purpleHorizon thead th:first-child {
+  border-left: none;
+}
+
+table.purpleHorizon tfoot td {
+  font-size: 13px;
+}
+.MuiInputLabel-root{
+  color: #e5e7eb;
+  font-size: 50px
+}
+.MuiOutlinedInput-input{
+  margin: dense;
+  font-size: 20px
+}
+.txt_center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.absolute {
+  position: relative;
+  top: 550px;
+}
+
+.pin{
+  position: relative;
+  align-self: flex-end;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn{
+  display: inline-block;
+  transform: translate(200px, 0px);
+}
+
+.legend {
+  transform: translate(60px, 0px);
+}
+
+.token-image{
+  position: absolute;
+  top: 118px;
+  right: 40px;
+  z-index: 1;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
