@@ -38,7 +38,7 @@ Built in solidity and react
 2. make sure to install vite and hardhat
 
 run the following command
-[run npm run dev]
+    npm run dev
 
 additional erc20 tokens can be added through the following process:
 
@@ -57,7 +57,7 @@ In the hardhat config file enter your alchemy api key and private key from your 
 
 
 ## Useful Libraries
-[Vite](https://vitejs.dev/) -> for launching locally
+[Vite](https://vitejs.dev/) -> for frontend tooling
 
 MUI -> for autocomplete feature
 
