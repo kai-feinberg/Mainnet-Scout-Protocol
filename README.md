@@ -1,7 +1,7 @@
 # Scout-Protocol-Mainnet
+https://scoutprotocol.xyz
 
 A tool made to improve the experience of transferring crypto...
-https://scoutprotocol.xyz
 
 [INSERT LINK TO TUTORIAL]
 
@@ -13,12 +13,12 @@ Scout has a suite of built in features to improve transparency and security when
 
 All optional of course for the anons out there ;) 
 
-<b>No kyc or personal information required or collected!<b>
+<b>No kyc/personal information required or collected!<b>
 
 ## Feature Overview
 
  * Entirely peer to peer
-  * Contracts never have control of users tokens
+  * contracts never have control of users tokens
 
 * Pin security
   * public pin confirmation system
@@ -41,13 +41,13 @@ All optional of course for the anons out there ;)
 2. make sure to install vite and hardhat
 
 run the following command
-```npm run dev```
+    ```npm run dev```
 
 additional erc20 tokens can be added through the following process:
 
   a. find the address of the token on the desired network 
   
-    I highly reccomend using uniswaps token lists [https://tokenlists.org/] to find the official addresses
+  I highly reccomend using (uniswaps token lists) [https://tokenlists.org/] to find the official addresses
     
     
 ## Deployment
