@@ -28,26 +28,30 @@ MEGA hackathon was the first ever student run blockchain hackathon and was put o
 ## Feature Overview
 
  * Entirely peer-to-peer
-  * contract NEVER has control of users coins
+  * Scout's contract NEVER has control of users coins
+
     ![p-2-p transactions](./readme_images/p2p.png)
 
 * Pin security
-  * public pin confirmation system
+  * Public pin confirmation system
+
     ![pin](./readme_images/pin.png)
   
 * Contact system
-  * autofill addresses of common contacts
+  * Autofill addresses of common contacts
+
     ![contact system](./readme_images/contacts.png)
   
  * Built in messaging, gifs, and timestamps
+
   * ![fun features](./readme_images/transactions.png)
   
- * Supports ETH, MATIC, and USDC
-  * and is compatible with ANY erc20 token on the Ethereum network (and compatible with all EVM chains)
+ * Supports ETH, MATIC, and USDC and is compatible with ALL erc20 tokens and EVM chains
+
   ![compatible](./readme_images/compatible.png)
   
- * Integrates seamelessly with metamask
- * Free to use
+ * Integrates seamlessly with metamask
+ * Free to use!!!
 
 
 ## Getting started
