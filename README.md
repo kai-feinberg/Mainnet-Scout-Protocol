@@ -1,18 +1,23 @@
 # Scout-Protocol-Mainnet
 
 A tool made to improve the experience of transferring crypto...
-
 https://scoutprotocol.xyz
 
 [INSERT LINK TO TUTORIAL]
 
 ## Overview
 
-Built in solidity and react
+Scout is an first of its kind intuitive, decentralized platform to improve the experience of transferring cryptocurrency. Scout is completely peer to peer meaning contracts never hold custody of user's coins. Anyone can connect to and use Scout without ever having to hand over control of their funds.
 
+Scout has a suite of built in features to improve transparency and security when sending funds. This include a novel public key system where users can set a pin as a second form of verification for users sending crypto to their address. Scout also provides an in-built contact system, as well as messaging and gifs on the blockchain (all of which are optional for the anons out there)!
+
+<b>No kyc or personal information required or collected!<b>
 
 ## Feature Overview
 
+ * Entirely peer to peer
+  * Contracts never have control of users tokens
+  
 * Pin security
   * public pin confirmation system
   
@@ -26,9 +31,6 @@ Built in solidity and react
   * is compatible with any ERC20 token on the Ethereum network
   
  * Integrates seamelessly with metamask
- 
- * Entirely peer to peer
-  * Contracts never have control of users tokens
   
  * Free to use
 
