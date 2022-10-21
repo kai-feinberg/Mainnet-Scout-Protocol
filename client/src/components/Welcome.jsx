@@ -72,14 +72,19 @@ const Welcome = () => {
     document.getElementById('contacts').scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
   const walletInfo = () => {
-    Notiflix.Report.info("Coming Soon!", "You can currently only transfer eth on metamask. More wallets and networks coming soon...", "Can't wait!");
+    Notiflix.Report.info("More integrations coming Soon!", "Currently Scout supports ETH, MATIC, and USDC on the Ethereum mainnet. As of now, users must have a metamask wallet to utilize Scout. However, we are working on extending support to other wallets. More wallets, tokens, and networks coming soon...", "Can't wait!");
   }
-
+  const openDocs = () =>{
+    window.open("https://github.com/kai-feinberg/Mainnet-Scout-Protocol");
+  }
+  const openVid = () => {
+    window.open("https://youtu.be/1m3LEJq3gRs");
+  }
   const Navbar = () => {
 
     return (
-      <nav className="w-full flex md:justify-center justify-between items-center p-4">
-        <div className="md:flex-[0.5] flex-initial justify-center items-center">
+      <nav className="w-full flex md:justify-center justify-between items-center p-2">
+        <div className="md:flex-[0.5] flex-initial justify-left items-center">
           <img src={logo} alt="logo" className="w-32 cursor-pointer" />
         </div>
 
@@ -90,11 +95,14 @@ const Welcome = () => {
           <button type="button" onClick={cntScroll} className="mx-4 cursor-pointer">
             Contacts
           </button>
-          <button type="button" onClick={txnScroll} className="mx-4 cursor-pointer">
-            <a href="https://youtu.be/1m3LEJq3gRs" target="_blank" rel="noopener noreferrer">Tutorials</a>
-          </button>
           <button type="button" onClick={walletInfo} className="mx-4 cursor-pointer">
             Wallets
+          </button>
+          <button type="button" onClick={openVid} className="mx-4 cursor-pointer">
+            Tutorial
+          </button>
+          <button type="button" onClick={openDocs} className="mx-4 cursor-pointer">
+            Docs
           </button>
 
           {!currentAccount &&
