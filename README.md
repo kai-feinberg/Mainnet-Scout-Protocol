@@ -15,7 +15,7 @@ All optional of course for the anons out there ;)
 <b>And...no kyc/personal information required or collected!<b>
 
 ## Awards
-Scout won 1st place in the first ever [MEGA Hackathon](https://www.megahackathon.com/#Feature6_0) sponsored by Polygon and Solana!
+[Scout won 1st place](https://mirror.xyz/m7e.eth/AQSfetsbmfznywv5OgJoq9rOEeqp3HybQWoVaA3f-gc) in the first ever [MEGA Hackathon](https://www.megahackathon.com/#Feature6_0) sponsored by Polygon and Solana!
 
 ![I won?!](./readme_images/mega.png)
 
