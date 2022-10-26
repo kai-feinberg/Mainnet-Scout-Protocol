@@ -78,7 +78,7 @@ const Welcome = () => {
     window.open("https://github.com/kai-feinberg/Mainnet-Scout-Protocol");
   }
   const openVid = () => {
-    window.open("https://youtu.be/1m3LEJq3gRs");
+    window.open("https://youtu.be/LXI-PWkZR4k");
   }
   const Navbar = () => {
 
@@ -190,7 +190,6 @@ const Welcome = () => {
   }
 
   const sendTransaction = async () => {
-    //console.log("currently loading: ", isLoading);
 
     try {
       if (ethereum) {
@@ -210,7 +209,6 @@ const Welcome = () => {
           }],
         });
         
-        // console.log("currently loading: ", isLoading);
         const transactionHash = await transactionsContract.addToBlockchain(recipient, parsedAmount, message, keyword, erc20);
         setIsLoading(true);
         console.log(`Loading - ${transactionHash.hash}`);
@@ -218,8 +216,6 @@ const Welcome = () => {
         console.log(`Success - ${transactionHash.hash}`);
         setIsLoading(false);
 
-        // const transactionsCount = await transactionsContract.getTransactionCount();
-        // setTransactionCount(transactionsCount.toNumber());
        
         
         Notiflix.Notify.success("Transaction " + JSON.stringify(transactionHash.hash) + " completed successfully", { pauseOnHover: true });
@@ -246,7 +242,6 @@ const Welcome = () => {
         const { amount, keyword, message } = formData;
         const usdcContract = createUsdcContract();
         const transactionsContract = createEthereumContract();
-        // console.log(usdcContract);
         let parsedAmount = ethers.utils.parseEther(amount);
         parsedAmount = parsedAmount/10**12;
         console.log(parsedAmount);
@@ -282,7 +277,6 @@ const Welcome = () => {
         const { amount, keyword, message } = formData;
         const maticContract = createMaticContract();
         const transactionsContract = createEthereumContract();
-        // console.log(usdcContract);
         let parsedAmount = ethers.utils.parseEther(amount);
         parsedAmount = parsedAmount;
         console.log(parsedAmount);
@@ -318,7 +312,6 @@ const Welcome = () => {
     const { addressTo, amount, keyword, message } = formData;
     //find true pin from smart contract
     const transactionsContract = createEthereumContract();
-    //const pin = await transactionsContract.getPin(addressTo);
     const pin = await transactionsContract.getPin(recipient);
     const truePin = parseInt(pin._hex, 16);
     //prevents reload
@@ -390,8 +383,7 @@ const Welcome = () => {
   const createUsdcContract = () => {
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner();
-    // console.log(usdcABI);
-    // console.log(contractABI);
+    
 
     //creates contract object in JSX
     const usdcContract = new ethers.Contract(usdcAddress, usdcABI, signer);
@@ -444,7 +436,7 @@ const Welcome = () => {
     const setInitialPin = async () => {
       const transactionsContract = createEthereumContract();
       const p = await transactionsContract.getPin(currentAccount);
-      //console.log("pin = ", p);
+      
       // set state with the result
       setCurrentPin(p);
       //console.log("initial pin", currentPin);
@@ -572,9 +564,7 @@ const Welcome = () => {
                     if (newRecipient !== null) {
                       console.log(newRecipient);
                       if (typeof (newRecipient) === "object") {
-                        // console.log((newRecipient.address));
                         setRecipient(newRecipient.address);
-                        // console.log(recipient);
                       } else {
                         setRecipient(newRecipient);
                       }
