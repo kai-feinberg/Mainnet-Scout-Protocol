@@ -2,7 +2,7 @@
 https://scoutprotocol.xyz
 A tool made to improve the experience of transferring crypto...
 
-[INSERT LINK TO TUTORIAL]
+A Live Tutorial: https://www.youtube.com/watch?v=LXI-PWkZR4k
 
 ## Overview
 
