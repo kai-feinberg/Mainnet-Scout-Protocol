@@ -24,7 +24,7 @@ MEGA hackathon was the first ever student-run blockchain hackathon and was put o
 
 ![MEGA Hackathon Sponsors](./readme_images/hackathon_sponsors.png)
 
-SCOUT also launched on smoothie.so and won [2nd place for the week!] (https://smoothie.so/project/kme6jny8)
+SCOUT also launched on smoothie.so and won [2nd place for the week!](https://smoothie.so/project/kme6jny8)
 
 ## Feature Overview
 
